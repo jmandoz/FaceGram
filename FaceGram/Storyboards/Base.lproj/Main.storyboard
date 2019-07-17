@@ -36,14 +36,23 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdy-IS-gNA">
                                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="44"/>
                                                         <state key="normal" title="B1"/>
+                                                        <connections>
+                                                            <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVN-YE-3m4"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ4-6w-Qct">
                                                         <rect key="frame" x="120.5" y="0.0" width="43" height="44"/>
                                                         <state key="normal" title="B2"/>
+                                                        <connections>
+                                                            <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7I-RH-Qqr"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gya-Ls-Hom">
                                                         <rect key="frame" x="240.5" y="0.0" width="43.5" height="44"/>
                                                         <state key="normal" title="B3"/>
+                                                        <connections>
+                                                            <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kRd-qD-5xZ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -53,14 +62,23 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6z-Es-GNp">
                                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="44"/>
                                                         <state key="normal" title="B4"/>
+                                                        <connections>
+                                                            <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DeJ-b4-Yk4"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTo-fR-aB3">
                                                         <rect key="frame" x="120.5" y="0.0" width="43" height="44"/>
                                                         <state key="normal" title="B5"/>
+                                                        <connections>
+                                                            <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o7N-Gr-dQZ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cj-ra-Ddi">
                                                         <rect key="frame" x="240.5" y="0.0" width="43.5" height="44"/>
                                                         <state key="normal" title="B6"/>
+                                                        <connections>
+                                                            <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGF-9o-7DF"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -70,14 +88,23 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCW-wb-s4x">
                                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="44"/>
                                                         <state key="normal" title="B7"/>
+                                                        <connections>
+                                                            <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtJ-aW-lTx"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNq-DG-8w1">
                                                         <rect key="frame" x="120.5" y="0.0" width="43" height="44"/>
                                                         <state key="normal" title="B8"/>
+                                                        <connections>
+                                                            <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="biP-bp-S0F"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSX-IH-FH1">
                                                         <rect key="frame" x="240.5" y="0.0" width="43.5" height="44"/>
                                                         <state key="normal" title="B9"/>
+                                                        <connections>
+                                                            <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJ4-R7-yFd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -200,6 +227,26 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="tdy-IS-gNA" id="tPo-f4-M8A"/>
+                        <outlet property="button1Image" destination="mWg-UJ-fuv" id="f0C-kP-msW"/>
+                        <outlet property="button2" destination="LJ4-6w-Qct" id="pOq-8g-BjP"/>
+                        <outlet property="button2Image" destination="YXa-NR-t9G" id="bDZ-hl-hoi"/>
+                        <outlet property="button3" destination="Gya-Ls-Hom" id="L0c-S0-fxL"/>
+                        <outlet property="button3Image" destination="yR9-NW-Qgp" id="36y-R0-2qL"/>
+                        <outlet property="button4" destination="o6z-Es-GNp" id="Ol1-uU-d7W"/>
+                        <outlet property="button4Image" destination="qIE-Ts-gD0" id="60l-12-UiF"/>
+                        <outlet property="button5" destination="KTo-fR-aB3" id="JxX-9o-Mvy"/>
+                        <outlet property="button5Image" destination="43b-3U-VSL" id="LcK-AP-dhe"/>
+                        <outlet property="button6" destination="2cj-ra-Ddi" id="PCv-ch-4Nl"/>
+                        <outlet property="button6Image" destination="T8u-ax-jVq" id="Vz8-cL-8ed"/>
+                        <outlet property="button7" destination="zCW-wb-s4x" id="H8N-Vg-7Xu"/>
+                        <outlet property="button7Image" destination="BZv-f5-UJE" id="PxQ-We-far"/>
+                        <outlet property="button8" destination="dNq-DG-8w1" id="kqE-KL-fIs"/>
+                        <outlet property="button8Image" destination="gIt-Vs-fC3" id="rlI-tK-JFe"/>
+                        <outlet property="button9" destination="YSX-IH-FH1" id="oOy-rM-gDv"/>
+                        <outlet property="button9Image" destination="oGk-fM-rKC" id="L2G-fC-Kov"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
