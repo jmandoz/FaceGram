@@ -9,11 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button1Image: UIImageView!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button2Image: UIImageView!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button3Image: UIImageView!
+    @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var button4Image: UIImageView!
+    @IBOutlet weak var button5: UIButton!
+    @IBOutlet weak var button5Image: UIImageView!
+    @IBOutlet weak var button6: UIButton!
+    @IBOutlet weak var button6Image: UIImageView!
+    @IBOutlet weak var button7: UIButton!
+    @IBOutlet weak var button7Image: UIImageView!
+    @IBOutlet weak var button8: UIButton!
+    @IBOutlet weak var button8Image: UIImageView!
+    @IBOutlet weak var button9: UIButton!
+    @IBOutlet weak var button9Image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func button1Tapped(_ sender: Any) {
+        
+        
+        
+        
+        
+    }
+    
+    
+    
     
     func threeInARow() {
         
@@ -22,7 +52,6 @@ class ViewController: UIViewController {
         let thirdArrayOfButtons = [button7, button8, button9]
         
         var winningConditions = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
-        
     }
 }
 
