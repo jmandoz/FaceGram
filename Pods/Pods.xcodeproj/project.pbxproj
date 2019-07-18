@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02BBBA6D553E67C1026B165B4BFF72AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */; };
+		09229083A89F337D175F519BD729CEC1 /* Pods-FaceGram-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF721E26EFB637BAD697958CA0A6C3B /* Pods-FaceGram-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BA05826C78A36A3D348440FF97BD3A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		0F15C583AC48EA543C92AC2F369FAFC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */; };
+		2B09B44A046D5700C1BCBF4E4F237DFD /* SAConfettiView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B07742AE94E20D9835EC141E3B8525 /* SAConfettiView-dummy.m */; };
+		65FE344CF109E88FA712681AAEEB7C75 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 82AFA6E6A4F900730D7423EB8E7F0524 /* diamond.png */; };
+		675E445F92624BB4D0373199AB25E6CB /* Pods-FaceGram-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84420F370AE9F095DDCECF21D7B70510 /* Pods-FaceGram-dummy.m */; };
+		8BFB79A61072A8FCCA1207D3282F2606 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = E5CB0F34F1DDE6BE2466083402CEC44F /* star.png */; };
+		BC82831E158BED1EAD6B2A5A322754C3 /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA268E70AA58B9E6DA387F827F06CCC /* SAConfettiView.swift */; };
+		DF3348D74A7EC3F9236DFE576AE8CF92 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = A4FFB666CFDD14A130B46ECDAB6D1F87 /* confetti.png */; };
+		E55265C877D73F6B1D022794340DC9D6 /* SAConfettiView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E94B64C2BD13E14D90FC9CA3977F42AF /* SAConfettiView.bundle */; };
+		EAEDC21885FBB482FC6217CF5DFB25B3 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 224A631C8EF49585C97532315B8693DD /* triangle.png */; };
+		F0D0D3ACC508A9E5B2F538CE61C351DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */; };
+		F8617B911AE350986CD115D328EBD69C /* SAConfettiView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8913CD23D5A9318E425A555DDF0A5A22 /* SAConfettiView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A27AD697FC1C902B9C90216BDB407C9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E488B4A8341D4A1374B44B7D0191BC4;
+			remoteInfo = "SAConfettiView-SAConfettiView";
+		};
+		BAC5000C28053F6487B1E6571CA4F93E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEF5EC9A82178D0D695682390F2DE2F1;
+			remoteInfo = SAConfettiView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		191187DF301190DA1B5BE5A2078A55D5 /* Pods-FaceGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceGram.release.xcconfig"; sourceTree = "<group>"; };
+		224A631C8EF49585C97532315B8693DD /* triangle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = triangle.png; path = Pod/Assets/triangle.png; sourceTree = "<group>"; };
+		22E351CD76CB8B0B2C1BD692050382FB /* SAConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SAConfettiView-Info.plist"; sourceTree = "<group>"; };
+		3CA268E70AA58B9E6DA387F827F06CCC /* SAConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAConfettiView.swift; path = Pod/Classes/SAConfettiView.swift; sourceTree = "<group>"; };
+		41B07742AE94E20D9835EC141E3B8525 /* SAConfettiView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAConfettiView-dummy.m"; sourceTree = "<group>"; };
+		4752B8343AF9EE9393D22B8346CAF44F /* Pods-FaceGram-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FaceGram-frameworks.sh"; sourceTree = "<group>"; };
+		47CA316C24AB2DFF43CE84D88B95E40D /* Pods-FaceGram.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FaceGram.modulemap"; sourceTree = "<group>"; };
+		49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4CFF2E4058F858816365EC642C6DD990 /* SAConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SAConfettiView.framework; path = SAConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6660D6CB125A2D281C9B5EFE717A281D /* Pods-FaceGram-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaceGram-Info.plist"; sourceTree = "<group>"; };
+		72122B5D3BE0CA7B73E5DDDEF10A8C4C /* SAConfettiView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-prefix.pch"; sourceTree = "<group>"; };
+		82AFA6E6A4F900730D7423EB8E7F0524 /* diamond.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = diamond.png; path = Pod/Assets/diamond.png; sourceTree = "<group>"; };
+		84420F370AE9F095DDCECF21D7B70510 /* Pods-FaceGram-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FaceGram-dummy.m"; sourceTree = "<group>"; };
+		8913CD23D5A9318E425A555DDF0A5A22 /* SAConfettiView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SAConfettiView-umbrella.h"; sourceTree = "<group>"; };
+		950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9A7A3A6216C31DEF3B98AE80061C2911 /* Pods_FaceGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FaceGram.framework; path = "Pods-FaceGram.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF721E26EFB637BAD697958CA0A6C3B /* Pods-FaceGram-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FaceGram-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4FFB666CFDD14A130B46ECDAB6D1F87 /* confetti.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = confetti.png; path = Pod/Assets/confetti.png; sourceTree = "<group>"; };
+		ABC3AAAE739EA56FB2282FBE63E2F2E1 /* Pods-FaceGram-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FaceGram-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C33F3BCD43F70B3F3D268A838A6DF433 /* Pods-FaceGram-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FaceGram-acknowledgements.plist"; sourceTree = "<group>"; };
+		C8BAEE9883DA7A434E1CCDB5ACAF5B3E /* Pods-FaceGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FaceGram.debug.xcconfig"; sourceTree = "<group>"; };
+		C966EDB8786158DD474BEF2496B388D7 /* SAConfettiView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SAConfettiView.modulemap; sourceTree = "<group>"; };
+		CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D3EF95357E3247EBC16D121F5F0559A8 /* SAConfettiView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAConfettiView.xcconfig; sourceTree = "<group>"; };
+		E5CB0F34F1DDE6BE2466083402CEC44F /* star.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = star.png; path = Pod/Assets/star.png; sourceTree = "<group>"; };
+		E94B64C2BD13E14D90FC9CA3977F42AF /* SAConfettiView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SAConfettiView.bundle; path = "SAConfettiView-SAConfettiView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1C068C00F69373A5034C08B4EAEF76 /* ResourceBundle-SAConfettiView-SAConfettiView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SAConfettiView-SAConfettiView-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DC8B572AAAC67F53362E2723D66B759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D0D3ACC508A9E5B2F538CE61C351DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44C960AE1FF7DAAA0835732B58EE448D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA05826C78A36A3D348440FF97BD3A6 /* Foundation.framework in Frameworks */,
+				02BBBA6D553E67C1026B165B4BFF72AA /* QuartzCore.framework in Frameworks */,
+				0F15C583AC48EA543C92AC2F369FAFC0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49DD411DC1625B344663D43A81C15D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C18BABFF9523A33465B5A91496FF0C3D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28E367CE8E6F3F15EFB6DC432F46D64E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A451E04608BDA5F3B5D5F4A9D7C25379 /* Pods-FaceGram */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		42CD8526D6AA365A013E9792BAD2478F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61ED1076720B7CD617D085C729DAF7A6 /* SAConfettiView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		61ED1076720B7CD617D085C729DAF7A6 /* SAConfettiView */ = {
+			isa = PBXGroup;
+			children = (
+				3CA268E70AA58B9E6DA387F827F06CCC /* SAConfettiView.swift */,
+				C5A33C5263C0FCF5BE4E947717D41735 /* Resources */,
+				A9A3A6742E6C7E33B2DD7C4655F36C40 /* Support Files */,
+			);
+			name = SAConfettiView;
+			path = SAConfettiView;
+			sourceTree = "<group>";
+		};
+		A451E04608BDA5F3B5D5F4A9D7C25379 /* Pods-FaceGram */ = {
+			isa = PBXGroup;
+			children = (
+				47CA316C24AB2DFF43CE84D88B95E40D /* Pods-FaceGram.modulemap */,
+				ABC3AAAE739EA56FB2282FBE63E2F2E1 /* Pods-FaceGram-acknowledgements.markdown */,
+				C33F3BCD43F70B3F3D268A838A6DF433 /* Pods-FaceGram-acknowledgements.plist */,
+				84420F370AE9F095DDCECF21D7B70510 /* Pods-FaceGram-dummy.m */,
+				4752B8343AF9EE9393D22B8346CAF44F /* Pods-FaceGram-frameworks.sh */,
+				6660D6CB125A2D281C9B5EFE717A281D /* Pods-FaceGram-Info.plist */,
+				9AF721E26EFB637BAD697958CA0A6C3B /* Pods-FaceGram-umbrella.h */,
+				C8BAEE9883DA7A434E1CCDB5ACAF5B3E /* Pods-FaceGram.debug.xcconfig */,
+				191187DF301190DA1B5BE5A2078A55D5 /* Pods-FaceGram.release.xcconfig */,
+			);
+			name = "Pods-FaceGram";
+			path = "Target Support Files/Pods-FaceGram";
+			sourceTree = "<group>";
+		};
+		A9A3A6742E6C7E33B2DD7C4655F36C40 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE1C068C00F69373A5034C08B4EAEF76 /* ResourceBundle-SAConfettiView-SAConfettiView-Info.plist */,
+				C966EDB8786158DD474BEF2496B388D7 /* SAConfettiView.modulemap */,
+				D3EF95357E3247EBC16D121F5F0559A8 /* SAConfettiView.xcconfig */,
+				41B07742AE94E20D9835EC141E3B8525 /* SAConfettiView-dummy.m */,
+				22E351CD76CB8B0B2C1BD692050382FB /* SAConfettiView-Info.plist */,
+				72122B5D3BE0CA7B73E5DDDEF10A8C4C /* SAConfettiView-prefix.pch */,
+				8913CD23D5A9318E425A555DDF0A5A22 /* SAConfettiView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SAConfettiView";
+			sourceTree = "<group>";
+		};
+		BC796E4EE6BB6053B176C22770C74189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A7A3A6216C31DEF3B98AE80061C2911 /* Pods_FaceGram.framework */,
+				E94B64C2BD13E14D90FC9CA3977F42AF /* SAConfettiView.bundle */,
+				4CFF2E4058F858816365EC642C6DD990 /* SAConfettiView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C18BABFF9523A33465B5A91496FF0C3D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				950B64BEB39CC506B65115EE95302D64 /* Foundation.framework */,
+				CBCD5169B524477639A9A41855A47F99 /* QuartzCore.framework */,
+				49F545AB76C9016ECAD7D83A1129E704 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C5A33C5263C0FCF5BE4E947717D41735 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A4FFB666CFDD14A130B46ECDAB6D1F87 /* confetti.png */,
+				82AFA6E6A4F900730D7423EB8E7F0524 /* diamond.png */,
+				E5CB0F34F1DDE6BE2466083402CEC44F /* star.png */,
+				224A631C8EF49585C97532315B8693DD /* triangle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				42CD8526D6AA365A013E9792BAD2478F /* Pods */,
+				BC796E4EE6BB6053B176C22770C74189 /* Products */,
+				28E367CE8E6F3F15EFB6DC432F46D64E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		84328E4206F90166765340C02ED6C0FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8617B911AE350986CD115D328EBD69C /* SAConfettiView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8520DA593A53FB6256D324421FB88610 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09229083A89F337D175F519BD729CEC1 /* Pods-FaceGram-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E488B4A8341D4A1374B44B7D0191BC4 /* SAConfettiView-SAConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D08FC3EABC923CF523A32E299C1BB8DD /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */;
+			buildPhases = (
+				18DC88AB1CF41A97684AE8302F5A2A4D /* Sources */,
+				49DD411DC1625B344663D43A81C15D17 /* Frameworks */,
+				70E3261F6EE119A0497B87A04AE65779 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SAConfettiView-SAConfettiView";
+			productName = "SAConfettiView-SAConfettiView";
+			productReference = E94B64C2BD13E14D90FC9CA3977F42AF /* SAConfettiView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DEE0CAD9498764B2EDED0DF5EF86EB83 /* Pods-FaceGram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3997E38078EFCEDBDAC281625E6ECA0 /* Build configuration list for PBXNativeTarget "Pods-FaceGram" */;
+			buildPhases = (
+				8520DA593A53FB6256D324421FB88610 /* Headers */,
+				6C52C62A29167C7C17E5AEBE58225137 /* Sources */,
+				1DC8B572AAAC67F53362E2723D66B759 /* Frameworks */,
+				0F108309BA2E6F904D538548217D4AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AE2B3299138F6FF3AB85B9EA9AE6904 /* PBXTargetDependency */,
+			);
+			name = "Pods-FaceGram";
+			productName = "Pods-FaceGram";
+			productReference = 9A7A3A6216C31DEF3B98AE80061C2911 /* Pods_FaceGram.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DEF5EC9A82178D0D695682390F2DE2F1 /* SAConfettiView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A7FD801DDF40A55A66A41D9997C32CE /* Build configuration list for PBXNativeTarget "SAConfettiView" */;
+			buildPhases = (
+				84328E4206F90166765340C02ED6C0FD /* Headers */,
+				EC8D63BDE57DCA5749BBD6E504B86E87 /* Sources */,
+				44C960AE1FF7DAAA0835732B58EE448D /* Frameworks */,
+				B6B51ED5B8E11F603E2E5554677E4BF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55B1272A325D7E31B9254744A630CAB7 /* PBXTargetDependency */,
+			);
+			name = SAConfettiView;
+			productName = SAConfettiView;
+			productReference = 4CFF2E4058F858816365EC642C6DD990 /* SAConfettiView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BC796E4EE6BB6053B176C22770C74189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEE0CAD9498764B2EDED0DF5EF86EB83 /* Pods-FaceGram */,
+				DEF5EC9A82178D0D695682390F2DE2F1 /* SAConfettiView */,
+				1E488B4A8341D4A1374B44B7D0191BC4 /* SAConfettiView-SAConfettiView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F108309BA2E6F904D538548217D4AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E3261F6EE119A0497B87A04AE65779 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3348D74A7EC3F9236DFE576AE8CF92 /* confetti.png in Resources */,
+				65FE344CF109E88FA712681AAEEB7C75 /* diamond.png in Resources */,
+				8BFB79A61072A8FCCA1207D3282F2606 /* star.png in Resources */,
+				EAEDC21885FBB482FC6217CF5DFB25B3 /* triangle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B51ED5B8E11F603E2E5554677E4BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E55265C877D73F6B1D022794340DC9D6 /* SAConfettiView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18DC88AB1CF41A97684AE8302F5A2A4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C52C62A29167C7C17E5AEBE58225137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				675E445F92624BB4D0373199AB25E6CB /* Pods-FaceGram-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8D63BDE57DCA5749BBD6E504B86E87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B09B44A046D5700C1BCBF4E4F237DFD /* SAConfettiView-dummy.m in Sources */,
+				BC82831E158BED1EAD6B2A5A322754C3 /* SAConfettiView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AE2B3299138F6FF3AB85B9EA9AE6904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAConfettiView;
+			target = DEF5EC9A82178D0D695682390F2DE2F1 /* SAConfettiView */;
+			targetProxy = BAC5000C28053F6487B1E6571CA4F93E /* PBXContainerItemProxy */;
+		};
+		55B1272A325D7E31B9254744A630CAB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SAConfettiView-SAConfettiView";
+			target = 1E488B4A8341D4A1374B44B7D0191BC4 /* SAConfettiView-SAConfettiView */;
+			targetProxy = A27AD697FC1C902B9C90216BDB407C9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		319E053A4DC12BCA33A7842DF76FD8F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191187DF301190DA1B5BE5A2078A55D5 /* Pods-FaceGram.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FaceGram/Pods-FaceGram-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FaceGram/Pods-FaceGram.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3284047C7260E2CC576A7CC733ADDC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3EF95357E3247EBC16D121F5F0559A8 /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAConfettiView/SAConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/SAConfettiView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SAConfettiView/SAConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = SAConfettiView;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4748C573EBB4687B08CD49362524BAB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3EF95357E3247EBC16D121F5F0559A8 /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SAConfettiView/SAConfettiView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/SAConfettiView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SAConfettiView/SAConfettiView.modulemap";
+				PRODUCT_MODULE_NAME = SAConfettiView;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A3248C539D8C1A1B798D873A15FC18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8BAEE9883DA7A434E1CCDB5ACAF5B3E /* Pods-FaceGram.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FaceGram/Pods-FaceGram-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FaceGram/Pods-FaceGram.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F06CA9ACA06C5FCB16AF557CD0EFBE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3EF95357E3247EBC16D121F5F0559A8 /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SAConfettiView";
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/ResourceBundle-SAConfettiView-SAConfettiView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		979E7C68B863F9924810A9FF3710DCE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3EF95357E3247EBC16D121F5F0559A8 /* SAConfettiView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SAConfettiView";
+				INFOPLIST_FILE = "Target Support Files/SAConfettiView/ResourceBundle-SAConfettiView-SAConfettiView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SAConfettiView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A7FD801DDF40A55A66A41D9997C32CE /* Build configuration list for PBXNativeTarget "SAConfettiView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3284047C7260E2CC576A7CC733ADDC78 /* Debug */,
+				4748C573EBB4687B08CD49362524BAB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3997E38078EFCEDBDAC281625E6ECA0 /* Build configuration list for PBXNativeTarget "Pods-FaceGram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3248C539D8C1A1B798D873A15FC18A /* Debug */,
+				319E053A4DC12BCA33A7842DF76FD8F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D08FC3EABC923CF523A32E299C1BB8DD /* Build configuration list for PBXNativeTarget "SAConfettiView-SAConfettiView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F06CA9ACA06C5FCB16AF557CD0EFBE5 /* Debug */,
+				979E7C68B863F9924810A9FF3710DCE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

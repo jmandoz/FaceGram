@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SAConfettiView
 
 class ViewController: UIViewController {
     
     var user1IsActive: Bool = true
+    
+    var confetti: Bool = false
     
     @IBOutlet weak var winnerLabel: UILabel!
     @IBOutlet weak var button1: UIButton!
@@ -46,6 +49,7 @@ class ViewController: UIViewController {
         sender.adjustsImageWhenDisabled = false
         sender.isEnabled = false
         threeInARow()
+        gridFull()
     }
     
     func reset(){
@@ -78,6 +82,10 @@ class ViewController: UIViewController {
         button9.isEnabled = true
         resetButtonLabel.isHidden = true
         winnerLabel.text = nil
+        if confetti {
+            stopTheConfetti()
+            confetti = false
+        }
     }
     
     func gameOver() {
@@ -90,7 +98,8 @@ class ViewController: UIViewController {
         button7.isEnabled = false
         button8.isEnabled = false
         button9.isEnabled = false
-        resetButtonLabel.isHidden = false
+        view.bringSubviewToFront(resetButtonLabel)
+        
     }
     
     func threeInARow() {
@@ -98,60 +107,134 @@ class ViewController: UIViewController {
         if button1?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button2?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button3?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
             gameOver()
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
+
         } else if button1?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button2?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button3?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         }
         if button4?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button5?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button6?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         } else if button4?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button5?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button6?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         }
         if button7?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button8?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button9?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         } else if button7?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button8?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button9?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         }
         if button1?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button4?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button7?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         } else if button1?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button4?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button7?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         }
         if button2?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button5?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button8?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         } else if button2?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button5?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button8?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         }
         if button3?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button6?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button9?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         } else if button3?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button6?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button9?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         }
         if button1?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button5?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button9?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         } else if button1?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button5?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button9?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         }
         if button3?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button5?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button7?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
+
         } else if button3?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button5?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button7?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            setUpConfetti()
+            resetButtonLabel.isHidden = false
             gameOver()
         }
-
     }
     
+    func gridFull() {
+        if button1.imageView?.image != nil &&
+            button2.imageView?.image != nil &&
+            button3.imageView?.image != nil &&
+            button4.imageView?.image != nil &&
+            button5.imageView?.image != nil &&
+            button6.imageView?.image != nil &&
+            button7.imageView?.image != nil &&
+            button8.imageView?.image != nil &&
+            button9.imageView?.image != nil  {
+            resetButtonLabel.isHidden = false
+            gameOver()
+        }
+    }
+}
+
+extension ViewController {
+    func setUpConfetti() {
+        confetti = true
+        let frame = self.view.frame
+        let confettiView = SAConfettiView(frame: frame)
+        self.view.addSubview(confettiView)
+        confettiView.startConfetti()
+    }
+    
+    func stopTheConfetti() {
+        view.subviews[3].removeFromSuperview()
+    }
 }
