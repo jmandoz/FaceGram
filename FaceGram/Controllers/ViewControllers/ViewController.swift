@@ -48,7 +48,8 @@ class ViewController: UIViewController {
         
         let firstArrayOfButtons = [button1, button2, button3]
         let secondArrayOfButtons = [button4, button5, button6]
-        let thirdArrayOfButtons = [button7, button8, button9]
+        let thirdArrayOfButtons
+            = [button7, button8, button9]
         let fourthArrayOfButtons = [button1, button4, button7]
         let fifthArrayOfButtons = [button2, button5, button8]
         let sixthArrayOfButtons = [button3, button6, button9]
