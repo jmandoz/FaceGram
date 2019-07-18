@@ -34,7 +34,8 @@ class ViewController: UIViewController {
             sender.setImage(#imageLiteral(resourceName: "NicFace"), for: .normal)
         }
         user1IsActive = !user1IsActive
-        
+        sender.adjustsImageWhenDisabled = false
+        sender.isEnabled = false
     }
     
     
