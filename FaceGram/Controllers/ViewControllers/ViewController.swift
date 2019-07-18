@@ -11,23 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var button1: UIButton!
-    @IBOutlet weak var button1Image: UIImageView!
     @IBOutlet weak var button2: UIButton!
-    @IBOutlet weak var button2Image: UIImageView!
     @IBOutlet weak var button3: UIButton!
-    @IBOutlet weak var button3Image: UIImageView!
     @IBOutlet weak var button4: UIButton!
-    @IBOutlet weak var button4Image: UIImageView!
     @IBOutlet weak var button5: UIButton!
-    @IBOutlet weak var button5Image: UIImageView!
     @IBOutlet weak var button6: UIButton!
-    @IBOutlet weak var button6Image: UIImageView!
     @IBOutlet weak var button7: UIButton!
-    @IBOutlet weak var button7Image: UIImageView!
     @IBOutlet weak var button8: UIButton!
-    @IBOutlet weak var button8Image: UIImageView!
     @IBOutlet weak var button9: UIButton!
-    @IBOutlet weak var button9Image: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
