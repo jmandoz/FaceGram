@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     var user1IsActive: Bool = true
     
+    @IBOutlet weak var winnerLabel: UILabel!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -36,6 +37,7 @@ class ViewController: UIViewController {
         user1IsActive = !user1IsActive
         sender.adjustsImageWhenDisabled = false
         sender.isEnabled = false
+        threeInARow()
     }
     
     
@@ -97,7 +99,6 @@ class ViewController: UIViewController {
         } else if button3?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button5?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button7?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
         }
-
     }
     
 }
