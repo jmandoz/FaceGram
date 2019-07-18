@@ -30,8 +30,6 @@ class ViewController: UIViewController {
     @IBAction func button1Tapped(_ sender: UIButton) {
         if user1IsActive {
             sender.setImage(#imageLiteral(resourceName: "JasonFace"), for: .normal)
-//            button1.imageView?.image = #imageLiteral(resourceName: "NicFace")
-//            sender.imageView?.image = #imageLiteral(resourceName: "NicFace")
         } else {
             sender.setImage(#imageLiteral(resourceName: "NicFace"), for: .normal)
         }
