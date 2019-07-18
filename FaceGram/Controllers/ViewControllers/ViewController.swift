@@ -22,10 +22,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var button7: UIButton!
     @IBOutlet weak var button8: UIButton!
     @IBOutlet weak var button9: UIButton!
+    @IBOutlet weak var resetButtonLabel: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func resetButtonTapped(_ sender: Any) {
+        reset()
     }
     
     @IBAction func button1Tapped(_ sender: UIButton) {
@@ -40,122 +46,100 @@ class ViewController: UIViewController {
         threeInARow()
     }
     
+    func reset(){
+        button1?.imageView?.image = nil
+        button1.isEnabled = true
+        button2?.imageView?.image = nil
+        button2.isEnabled = true
+        button3?.imageView?.image = nil
+        button3.isEnabled = true
+        button4?.imageView?.image = nil
+        button4.isEnabled = true
+        button5?.imageView?.image = nil
+        button5.isEnabled = true
+        button6?.imageView?.image = nil
+        button6.isEnabled = true
+        button7?.imageView?.image = nil
+        button7.isEnabled = true
+        button8?.imageView?.image = nil
+        button8.isEnabled = true
+        button9?.imageView?.image = nil
+        button9.isEnabled = true
+        resetButtonLabel.isHidden = true
+    }
     
-    
+    func gameOver() {
+        button1.isEnabled = false
+        button2.isEnabled = false
+        button3.isEnabled = false
+        button4.isEnabled = false
+        button5.isEnabled = false
+        button6.isEnabled = false
+        button7.isEnabled = false
+        button8.isEnabled = false
+        button9.isEnabled = false
+        resetButtonLabel.isHidden = false
+    }
     
     func threeInARow() {
         
-        
-        let firstArrayOfButtons = [button1, button2, button3]
-        let secondArrayOfButtons = [button4, button5, button6]
-        let thirdArrayOfButtons = [button7, button8, button9]
-        let fourthArrayOfButtons = [button1, button4, button7]
-        let fifthArrayOfButtons = [button2, button5, button8]
-        let sixthArrayOfButtons = [button3, button6, button9]
-        let seventhArrayOfButtons = [button1, button5, button9]
-        let eighthArrayOfButtons = [button3, button5, button7]
-        
-//        let winningArray = [firstArrayOfButtons, secondArrayOfButtons, thirdArrayOfButtons, fourthArrayOfButtons, fifthArrayOfButtons, sixthArrayOfButton, seventhArrayOfButton, eighthArrayOfButton]
-        //        var winningConditions = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
-        
         if button1?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button2?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button3?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            gameOver()
         } else if button1?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button2?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button3?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            gameOver()
         }
-        
         if button4?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button5?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button6?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            gameOver()
         } else if button4?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button5?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button6?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            gameOver()
         }
         if button7?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button8?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button9?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            gameOver()
         } else if button7?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button8?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button9?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            gameOver()
         }
         if button1?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button4?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button7?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            gameOver()
         } else if button1?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button4?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button7?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            gameOver()
         }
         if button2?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button5?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button8?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            gameOver()
         } else if button2?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button5?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button8?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            gameOver()
         }
         if button3?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button6?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button9?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            gameOver()
         } else if button3?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button6?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button9?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            gameOver()
         }
         if button1?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button5?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button9?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            gameOver()
         } else if button1?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button5?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button9?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            gameOver()
         }
         if button3?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button5?.imageView?.image == #imageLiteral(resourceName: "JasonFace") && button7?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
             winnerLabel.text = "Jason Wins!"
+            gameOver()
         } else if button3?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button5?.imageView?.image == #imageLiteral(resourceName: "NicFace") && button7?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
             winnerLabel.text = "Nic Wins!"
+            gameOver()
         }
+
     }
     
 }
-//        for button in firstArrayOfButtons {
-//            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
-//                winnerLabel.text = "Jason Wins!"
-//            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
-//                winnerLabel.text = "Nic Wins!"
-//            }
-//        }
-//        for button in secondArrayOfButtons {
-//            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
-//                winnerLabel.text = "Jason Wins!"
-//            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
-//                winnerLabel.text = "Nic Wins!"
-//            }
-//        }
-//        for button in thirdArrayOfButtons {
-//            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
-//                winnerLabel.text = "Jason Wins!"
-//            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
-//                winnerLabel.text = "Nic Wins!"
-//            }
-//        }
-//        for button in fourthArrayOfButtons {
-//            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
-//                winnerLabel.text = "Jason Wins!"
-//            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
-//                winnerLabel.text = "Nic Wins!"
-//            }
-//        }
-//        for button in fifthArrayOfButtons {
-//            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
-//                winnerLabel.text = "Jason Wins!"
-//            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
-//                winnerLabel.text = "Nic Wins!"
-//            }
-//        }
-//        for button in sixthArrayOfButtons {
-//            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
-//                winnerLabel.text = "Jason Wins!"
-//            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
-//                winnerLabel.text = "Nic Wins!"
-//            }
-//        }
-//        for button in seventhArrayOfButtons {
-//            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
-//                winnerLabel.text = "Jason Wins!"
-//            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
-//                winnerLabel.text = "Nic Wins!"
-//            }
-//        }
-//        for button in eighthArrayOfButtons {
-//            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
-//                winnerLabel.text = "Jason Wins!"
-//            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
-//                winnerLabel.text = "Nic Wins!"
-//            }
-//        }
-

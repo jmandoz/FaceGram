@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C5D547F22E0DDB100FE9752 /* trashco.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D547E22E0DDB100FE9752 /* trashco.ttf */; };
-		7C5D548322E0E29A00FE9752 /* LittleLordFontleroyNF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D548222E0E29A00FE9752 /* LittleLordFontleroyNF.ttf */; };
 		A47A16BB22DF7CA300323A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A16BA22DF7CA300323A73 /* AppDelegate.swift */; };
 		A47A16BD22DF7CA300323A73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A16BC22DF7CA300323A73 /* ViewController.swift */; };
 		A47A16C022DF7CA300323A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47A16BE22DF7CA300323A73 /* Main.storyboard */; };
@@ -17,9 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C5D547E22E0DDB100FE9752 /* trashco.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = trashco.ttf; path = ../../../../Downloads/trashco/trashco.ttf; sourceTree = "<group>"; };
-		7C5D548122E0DDB800FE9752 /* trashco.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = trashco.ttf; sourceTree = "<group>"; };
-		7C5D548222E0E29A00FE9752 /* LittleLordFontleroyNF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LittleLordFontleroyNF.ttf; path = ../../../../../Downloads/littlelordfontleroy/LittleLordFontleroyNF.ttf; sourceTree = "<group>"; };
 		A47A16B722DF7CA300323A73 /* FaceGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47A16BA22DF7CA300323A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A47A16BC22DF7CA300323A73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +42,6 @@
 				A47A16BA22DF7CA300323A73 /* AppDelegate.swift */,
 				A47A16C122DF7CA500323A73 /* Assets.xcassets */,
 				A47A16C322DF7CA500323A73 /* LaunchScreen.storyboard */,
-				7C5D547E22E0DDB100FE9752 /* trashco.ttf */,
 				7C5D548022E0DDB500FE9752 /* Fonts */,
 			);
 			path = Resources;
@@ -102,8 +96,6 @@
 		7C5D548022E0DDB500FE9752 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				7C5D548122E0DDB800FE9752 /* trashco.ttf */,
-				7C5D548222E0E29A00FE9752 /* LittleLordFontleroyNF.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -197,8 +189,6 @@
 				A47A16C522DF7CA500323A73 /* LaunchScreen.storyboard in Resources */,
 				A47A16C222DF7CA500323A73 /* Assets.xcassets in Resources */,
 				A47A16C022DF7CA300323A73 /* Main.storyboard in Resources */,
-				7C5D547F22E0DDB100FE9752 /* trashco.ttf in Resources */,
-				7C5D548322E0E29A00FE9752 /* LittleLordFontleroyNF.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
