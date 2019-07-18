@@ -10,8 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="LittleLordFontleroyNF.ttf">
-            <string>LittleLordFontleroyNF</string>
+        <array key="SFUIText.ttf">
+            <string>.SFUIText</string>
         </array>
     </customFonts>
     <scenes>
@@ -156,13 +156,6 @@
                                     <constraint firstItem="wBx-EL-3fO" firstAttribute="centerY" secondItem="BdO-8h-p2R" secondAttribute="centerY" id="wy1-nx-bGQ"/>
                                 </constraints>
                             </view>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfl-bg-rRM">
-                                <rect key="frame" x="188" y="712" width="39" height="30"/>
-                                <state key="normal" title="Reset"/>
-                                <connections>
-                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6M-0g-mqi"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSv-m1-myJ">
                                 <rect key="frame" x="207" y="278" width="0.0" height="21"/>
                                 <constraints>
@@ -173,24 +166,30 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5S-eX-5ou">
-                                <rect key="frame" x="39.5" y="70" width="335" height="165"/>
-                                <fontDescription key="fontDescription" name="LittleLordFontleroyNF" family="Little Lord Fontleroy NF" pointSize="67"/>
+                                <rect key="frame" x="28.5" y="70" width="357.5" height="165"/>
+                                <fontDescription key="fontDescription" name=".SFUIText" family=".SF UI Text" pointSize="67"/>
                                 <color key="textColor" red="0.43938142061233521" green="0.78202122449874878" blue="0.42790353298187256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfl-bg-rRM">
+                                <rect key="frame" x="153" y="712" width="108" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6M-0g-mqi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PSv-m1-myJ" firstAttribute="centerX" secondItem="sfl-bg-rRM" secondAttribute="centerX" id="EwK-5c-r2w"/>
                             <constraint firstItem="BdO-8h-p2R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F7K-wG-a9N"/>
-                            <constraint firstItem="sfl-bg-rRM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="188" id="SXx-Q1-6W3"/>
                             <constraint firstItem="Z5S-eX-5ou" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W5X-gb-iEf"/>
                             <constraint firstItem="BdO-8h-p2R" firstAttribute="top" secondItem="PSv-m1-myJ" secondAttribute="bottom" constant="30" id="WKr-jr-pxx"/>
                             <constraint firstItem="PSv-m1-myJ" firstAttribute="centerX" secondItem="Z5S-eX-5ou" secondAttribute="centerX" id="aoC-sz-gkf"/>
                             <constraint firstItem="PSv-m1-myJ" firstAttribute="top" secondItem="Z5S-eX-5ou" secondAttribute="bottom" constant="43" id="gVH-Br-Xo0"/>
                             <constraint firstItem="BdO-8h-p2R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.1" id="ggD-ZI-e21"/>
                             <constraint firstItem="Z5S-eX-5ou" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.34" id="sE0-YU-oOU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sfl-bg-rRM" secondAttribute="bottom" constant="120" id="wg6-yL-mW7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -205,6 +204,7 @@
                         <outlet property="button8" destination="dNq-DG-8w1" id="kqE-KL-fIs"/>
                         <outlet property="button9" destination="YSX-IH-FH1" id="oOy-rM-gDv"/>
                         <outlet property="resetButtonLabel" destination="sfl-bg-rRM" id="Rfr-MP-yDj"/>
+                        <outlet property="ticTacToeLabel" destination="Z5S-eX-5ou" id="0WD-jk-nL4"/>
                         <outlet property="winnerLabel" destination="PSv-m1-myJ" id="1Pq-vV-OTz"/>
                     </connections>
                 </viewController>
