@@ -50,22 +50,31 @@ class ViewController: UIViewController {
     
     func reset(){
         button1.setImage(nil, for: .normal)
+        button1.imageView?.image = nil
         button1.isEnabled = true
-        button2.setImage(nil, for: .normal)
+        button2.imageView?.image = nil
         button2.isEnabled = true
+        button2.setImage(nil, for: .normal)
         button3.setImage(nil, for: .normal)
+        button3.imageView?.image = nil
         button3.isEnabled = true
         button4.setImage(nil, for: .normal)
+        button4.imageView?.image = nil
         button4.isEnabled = true
         button5.setImage(nil, for: .normal)
+        button5.imageView?.image = nil
         button5.isEnabled = true
         button6.setImage(nil, for: .normal)
+        button6.imageView?.image = nil
         button6.isEnabled = true
         button7.setImage(nil, for: .normal)
+        button7.imageView?.image = nil
         button7.isEnabled = true
         button8.setImage(nil, for: .normal)
+        button8.imageView?.image = nil
         button8.isEnabled = true
         button9.setImage(nil, for: .normal)
+        button9.imageView?.image = nil
         button9.isEnabled = true
         resetButtonLabel.isHidden = true
         winnerLabel.text = nil
