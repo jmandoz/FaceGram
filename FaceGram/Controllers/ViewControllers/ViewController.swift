@@ -29,11 +29,11 @@ class ViewController: UIViewController {
     
     @IBAction func button1Tapped(_ sender: UIButton) {
         if user1IsActive {
-//            sender.imageView?.image = #imageLiteral(resourceName: <#T##String#>)
-            sender.backgroundColor = .red
+            sender.setImage(#imageLiteral(resourceName: "JasonFace"), for: .normal)
+//            button1.imageView?.image = #imageLiteral(resourceName: "NicFace")
+//            sender.imageView?.image = #imageLiteral(resourceName: "NicFace")
         } else {
-//            sender.imageView?.image = #imageLiteral(resourceName: <#T##String#>)
-            // add picture two to the image view
+            sender.setImage(#imageLiteral(resourceName: "NicFace"), for: .normal)
         }
         user1IsActive = !user1IsActive
         
@@ -42,13 +42,13 @@ class ViewController: UIViewController {
     
     
     
-    func threeInARow() {
-        
-        let firstArrayOfButtons = [button1, button2, button3]
-        let secondArrayOfButtons = [button4, button5, button6]
-        let thirdArrayOfButtons = [button7, button8, button9]
-        
-        var winningConditions = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
-    }
+//    func threeInARow() {
+//
+//        let firstArrayOfButtons = [button1, button2, button3]
+//        let secondArrayOfButtons = [button4, button5, button6]
+//        let thirdArrayOfButtons = [button7, button8, button9]
+//
+//        var winningConditions = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
+//    }
 }
 
