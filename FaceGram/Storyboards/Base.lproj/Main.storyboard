@@ -160,13 +160,13 @@
                                 <rect key="frame" x="188" y="712" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSv-m1-myJ">
-                                <rect key="frame" x="186" y="278" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSv-m1-myJ">
+                                <rect key="frame" x="207" y="278" width="0.0" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="mVb-QG-mh4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="0.56225025630000003" green="1" blue="0.54911426320000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5S-eX-5ou">
@@ -201,6 +201,7 @@
                         <outlet property="button7" destination="zCW-wb-s4x" id="H8N-Vg-7Xu"/>
                         <outlet property="button8" destination="dNq-DG-8w1" id="kqE-KL-fIs"/>
                         <outlet property="button9" destination="YSX-IH-FH1" id="oOy-rM-gDv"/>
+                        <outlet property="winnerLabel" destination="PSv-m1-myJ" id="1Pq-vV-OTz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
