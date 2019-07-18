@@ -35,10 +35,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button1Tapped(_ sender: UIButton) {
-        if user1IsActive {
-            sender.setImage(#imageLiteral(resourceName: "JasonFace"), for: .normal)
-        } else {
-            sender.setImage(#imageLiteral(resourceName: "NicFace"), for: .normal)
+        UIView.performWithoutAnimation {
+            if user1IsActive {
+                sender.setImage(#imageLiteral(resourceName: "JasonFace"), for: .normal)
+            } else {
+                sender.setImage(#imageLiteral(resourceName: "NicFace"), for: .normal)
+            }
         }
         user1IsActive = !user1IsActive
         sender.adjustsImageWhenDisabled = false
@@ -47,23 +49,23 @@ class ViewController: UIViewController {
     }
     
     func reset(){
-        button1?.imageView?.image = nil
+        button1.setImage(nil, for: .normal)
         button1.isEnabled = true
-        button2?.imageView?.image = nil
+        button2.setImage(nil, for: .normal)
         button2.isEnabled = true
-        button3?.imageView?.image = nil
+        button3.setImage(nil, for: .normal)
         button3.isEnabled = true
-        button4?.imageView?.image = nil
+        button4.setImage(nil, for: .normal)
         button4.isEnabled = true
-        button5?.imageView?.image = nil
+        button5.setImage(nil, for: .normal)
         button5.isEnabled = true
-        button6?.imageView?.image = nil
+        button6.setImage(nil, for: .normal)
         button6.isEnabled = true
-        button7?.imageView?.image = nil
+        button7.setImage(nil, for: .normal)
         button7.isEnabled = true
-        button8?.imageView?.image = nil
+        button8.setImage(nil, for: .normal)
         button8.isEnabled = true
-        button9?.imageView?.image = nil
+        button9.setImage(nil, for: .normal)
         button9.isEnabled = true
         resetButtonLabel.isHidden = true
     }
