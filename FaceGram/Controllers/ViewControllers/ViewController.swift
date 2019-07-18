@@ -41,13 +41,79 @@ class ViewController: UIViewController {
     
     
     
-//    func threeInARow() {
-//
-//        let firstArrayOfButtons = [button1, button2, button3]
-//        let secondArrayOfButtons = [button4, button5, button6]
-//        let thirdArrayOfButtons = [button7, button8, button9]
-//
-//        var winningConditions = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
-//    }
+    func threeInARow() {
+        
+        
+        let firstArrayOfButtons = [button1, button2, button3]
+        let secondArrayOfButtons = [button4, button5, button6]
+        let thirdArrayOfButtons = [button7, button8, button9]
+        let fourthArrayOfButtons = [button1, button4, button7]
+        let fifthArrayOfButtons = [button2, button5, button8]
+        let sixthArrayOfButtons = [button3, button6, button9]
+        let seventhArrayOfButtons = [button1, button5, button9]
+        let eighthArrayOfButtons = [button3, button5, button7]
+        
+//        let winningArray = [firstArrayOfButtons, secondArrayOfButtons, thirdArrayOfButtons, fourthArrayOfButtons, fifthArrayOfButtons, sixthArrayOfButton, seventhArrayOfButton, eighthArrayOfButton]
+        //        var winningConditions = [[1,2,3],[4,5,6],[7,8,9],[1,4,7],[2,5,8],[3,6,9],[1,5,9],[3,5,7]]
+        
+        for button in firstArrayOfButtons {
+            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
+                winnerLabel.text = "Jason Wins!"
+            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
+                winnerLabel.text = "Nic Wins!"
+            }
+        }
+        for button in secondArrayOfButtons {
+            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
+                winnerLabel.text = "Jason Wins!"
+            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
+                winnerLabel.text = "Nic Wins!"
+            }
+        }
+        for button in thirdArrayOfButtons {
+            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
+                winnerLabel.text = "Jason Wins!"
+            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
+                winnerLabel.text = "Nic Wins!"
+            }
+        }
+        for button in fourthArrayOfButtons {
+            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
+                winnerLabel.text = "Jason Wins!"
+            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
+                winnerLabel.text = "Nic Wins!"
+            }
+        }
+        for button in fifthArrayOfButtons {
+            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
+                winnerLabel.text = "Jason Wins!"
+            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
+                winnerLabel.text = "Nic Wins!"
+            }
+        }
+        for button in sixthArrayOfButtons {
+            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
+                winnerLabel.text = "Jason Wins!"
+            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
+                winnerLabel.text = "Nic Wins!"
+            }
+        }
+        for button in seventhArrayOfButtons {
+            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
+                winnerLabel.text = "Jason Wins!"
+            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
+                winnerLabel.text = "Nic Wins!"
+            }
+        }
+        for button in eighthArrayOfButtons {
+            if button?.imageView?.image == #imageLiteral(resourceName: "JasonFace") {
+                winnerLabel.text = "Jason Wins!"
+            } else if button?.imageView?.image == #imageLiteral(resourceName: "NicFace") {
+                winnerLabel.text = "Nic Wins!"
+            }
+        }
+        
+    }
+    
 }
 
