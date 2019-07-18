@@ -78,21 +78,18 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdy-IS-gNA">
                                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="90"/>
-                                                        <state key="normal" title="B1"/>
                                                         <connections>
                                                             <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVN-YE-3m4"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ4-6w-Qct">
                                                         <rect key="frame" x="115.5" y="0.0" width="83" height="90"/>
-                                                        <state key="normal" title="B2"/>
                                                         <connections>
                                                             <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7I-RH-Qqr"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gya-Ls-Hom">
                                                         <rect key="frame" x="230.5" y="0.0" width="83.5" height="90"/>
-                                                        <state key="normal" title="B3"/>
                                                         <connections>
                                                             <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kRd-qD-5xZ"/>
                                                         </connections>
@@ -104,21 +101,18 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6z-Es-GNp">
                                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="90"/>
-                                                        <state key="normal" title="B4"/>
                                                         <connections>
                                                             <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DeJ-b4-Yk4"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTo-fR-aB3">
                                                         <rect key="frame" x="115.5" y="0.0" width="83" height="90"/>
-                                                        <state key="normal" title="B5"/>
                                                         <connections>
                                                             <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o7N-Gr-dQZ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cj-ra-Ddi">
                                                         <rect key="frame" x="230.5" y="0.0" width="83.5" height="90"/>
-                                                        <state key="normal" title="B6"/>
                                                         <connections>
                                                             <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGF-9o-7DF"/>
                                                         </connections>
@@ -130,21 +124,18 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCW-wb-s4x">
                                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="90"/>
-                                                        <state key="normal" title="B7"/>
                                                         <connections>
                                                             <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtJ-aW-lTx"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNq-DG-8w1">
                                                         <rect key="frame" x="115.5" y="0.0" width="83" height="90"/>
-                                                        <state key="normal" title="B8"/>
                                                         <connections>
                                                             <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="biP-bp-S0F"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSX-IH-FH1">
                                                         <rect key="frame" x="230.5" y="0.0" width="83.5" height="90"/>
-                                                        <state key="normal" title="B9"/>
                                                         <connections>
                                                             <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJ4-R7-yFd"/>
                                                         </connections>
@@ -164,6 +155,11 @@
                                     <constraint firstAttribute="height" constant="328" id="vHu-Q6-gLZ"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfl-bg-rRM">
+                                <rect key="frame" x="188" y="712" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
