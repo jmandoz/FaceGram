@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var user1IsActive: Bool = true
+    
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button1Image: UIImageView!
     @IBOutlet weak var button2: UIButton!
@@ -34,11 +36,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func button1Tapped(_ sender: Any) {
-        
-        
-        
-        
+    @IBAction func button1Tapped(_ sender: UIButton) {
+        if user1IsActive {
+//            sender.imageView?.image = #imageLiteral(resourceName: <#T##String#>)
+            sender.backgroundColor = .red
+        } else {
+//            sender.imageView?.image = #imageLiteral(resourceName: <#T##String#>)
+            // add picture two to the image view
+        }
+        user1IsActive = !user1IsActive
         
     }
     
