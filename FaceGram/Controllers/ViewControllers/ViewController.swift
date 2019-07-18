@@ -68,6 +68,7 @@ class ViewController: UIViewController {
         button9.setImage(nil, for: .normal)
         button9.isEnabled = true
         resetButtonLabel.isHidden = true
+        winnerLabel.text = nil
     }
     
     func gameOver() {
